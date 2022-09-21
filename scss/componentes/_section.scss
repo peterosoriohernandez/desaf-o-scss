@@ -1,0 +1,219 @@
+.container__red {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    margin: 70px auto;
+    gap: 10px;
+
+    .nombres {
+        height: 380px;
+
+        .pilotos__1 {
+            height: 320px;
+            width: 200px;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-right: 0;
+
+            .pilotos {
+                width: 100%;
+                height: 320px;
+
+
+                .pilotos__3 {
+                    margin-bottom: 15px;
+                    display: flex;
+                    flex-direction: row;
+
+                    .foto__ser {
+                        margin-top: 30px;
+                    }
+
+                    .texto__max {
+                        padding-left: 10px;
+
+                        .txt__2 {
+                            margin-top: 50px;
+                        }
+
+
+                        h3 {
+                            color: map-get($map: $section, $key: c-section);
+                        }
+                    }
+                }
+
+                h2 {
+                    font-size: map-get($map: $section, $key: txt-h2);
+
+                    &::before {
+                        content: "/";
+                    }
+                }
+            }
+        }
+
+        .margin__bottom {
+            margin-bottom: 15px;
+        }
+
+        .escuderia {
+            width: 418px;
+            height: 340px;
+
+            .left {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                margin-bottom: 20px;
+
+                dd {
+                    margin-bottom: 0;
+                    font-size: map-get($map: $section, $key: txt-section);
+                }
+            }
+        }
+    }
+
+    .wrap {
+        width: 80%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0 auto;
+
+        .caja {
+            width: 61%;
+            height: 800px;
+            background-color: map-get($map: $section, $key: cs-section);
+
+            .foto {
+                width: 100%;
+
+                span {
+                    text-align: right;
+                    font-size: $txt-principal;
+                    display: block;
+                }
+            }
+
+            .red__bull {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+
+                .img {
+                    width: 100%;
+                    height: auto;
+                }
+
+
+                .blue__red {
+                    width: 115px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 5px;
+                    flex-direction: row;
+                    border: 2px solid #161C17;
+                    border-radius: 10px;
+
+
+                    a {
+                        margin: 10px;
+                        text-align: center;
+
+
+                        i {
+                            font-size: map-get($map: $section, $key: i-font);
+                            color: map-get($map: $section, $key: c-section);
+                        }
+                    }
+                }
+            }
+        }
+
+        .caja__2 {
+            width: 39%;
+            height: 800px;
+            background-color: map-get($map: $section, $key: bg-aside);
+
+            .caja__portada {
+                padding: 15px;
+                height: 637px;
+
+                .horarios {
+                    width: 100%;
+                    height: 280px;
+
+                    .caja__g {
+                        height: 63px;
+
+                       .item {
+                        text-align: center;
+
+                        strong {
+                            padding: 1px;
+                            display: block;
+                            font-size: 1.2rem;
+                            margin-bottom: 5px;
+                        }
+                       }
+
+                        h3 {
+                            font-size: 1.8rem;
+                            text-transform: uppercase;
+                            font-family: "Roboto Condensed", "Roboto", Arial;
+                            font-weight: 400;
+                            margin-bottom: 5px;
+                            border-bottom: 3px solid #ff9e1b;
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    h2 {
+                        font-size: map-get($map: $section, $key: txt-2);
+                        padding-left: 10px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .text-center {
+                    width: 100%;
+                    height: 120px;
+
+
+                    .flecha {
+                        width: 100%;
+
+                        h3 {
+                            margin-top: 10px;
+                        }
+
+                        span {
+                            font-size: 17px;
+                            font-weight: $font;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+
+                h1 {
+                    font-size: map-get($map: $section, $key: txt-h2);
+                    text-align: center;
+
+                    &::before {
+                        content: "/";
+                    }
+                }
+            }
+        }
+    }
+}
